@@ -5,11 +5,11 @@ import pytesseract as tess
 import os
 
 # Globals
-tess.pytesseract.tesseract_cmd = r'C:\Users\math2\AppData\Local\Programs\Tesseract-OCR\tesseract.exe'
+tess.pytesseract.tesseract_cmd = r'...Tesseract-OCR\tesseract.exe'
 toAssume = []
 toDateAssume = []
 toDolAssume = []
-path = r'C:\Users\math2\Desktop\Citi HBCU Hackathon\FGFTW-main\FGFTW-main\images\check_52.png'
+path = r'...\images\check_52.png'
 
 date = [(590, 95), (840, 55)]
 dollar = [(755, 110), (920, 155)]
@@ -419,7 +419,7 @@ def superfunciton():
 # run the super function for every picture
 for f in os.listdir("images"):
     if f.endswith('.jpg') or f.endswith('.png'):
-        path = "C:\\" + "Users\math2\Desktop\Citi HBCU Hackathon\FGFTW-main\FGFTW-main\images\\" + f
+        path = "C:\\" + "...images\\" + f
         print(path)
         superfunciton()
 
